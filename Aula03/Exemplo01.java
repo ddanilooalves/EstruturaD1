@@ -10,14 +10,19 @@ public class Exemplo01 {
         lista.add(30);
         mostrarTodos(lista);
         System.out.println("Tamanho da lista: " + lista.size());
+        /*Mostra o tamanho da lista */
         System.out.println("Elemento do índice 2: " + lista.get(2));
+        /*Mostra o valor/elemento do índice */
         System.out.println("Removendo elemento do índice 1: ");
         lista.remove(1);
         mostrarTodos(lista);
-        System.out.println("índice do elemento 20: " + lista.indexOf(30));
+        System.out.println("índice do elemento 30: " + lista.indexOf(30));
+        /*Mostra o indice do valor/elemento da lista */
         System.out.println("Removendo número de valor 30: ");
         lista.remove((Integer) 30);
         mostrarTodos(lista);
+        System.out.println("Contem o número 3: " + lista.contains(3));
+        /*Mostrar se o número está na lista ou não com true and false */
     }
 
     private static void mostrarTodos(List<Integer> lista) {
@@ -27,6 +32,5 @@ public class Exemplo01 {
         for (Object item : lista) {
             System.out.print(item + " ");
         }
-        System.out.println();
     }
 }
