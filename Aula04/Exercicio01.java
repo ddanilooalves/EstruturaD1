@@ -18,6 +18,7 @@ public class Exercicio01 {
                 if (pilha.isEmpty()) {
                     balanceada = false;
                 } else {
+                    /* Verificar se o caractere de fechamento é o mesmo de abertura. */
                     pilha.pop();
                 }
             }
